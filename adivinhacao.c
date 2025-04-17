@@ -6,8 +6,21 @@ int main (){
     int numerosecreto;
     numerosecreto =  42;
     int chute;
+    int acertou = chute == numerosecreto;
 
     printf("Qual o numero secreto?");
     scanf("%d", &chute);
-    printf("Voce chutou o numero %d" , chute);
+
+    if(acertou){
+        printf("Parabéns, você acertou!!");
+    }
+    else{
+        int maior = chute > numerosecreto;
+        if(maior){
+            printf("%d é maior que o numero secreto\n" , chute);
+        } else {
+            printf("%d é menor que o numero secreto" , chute);
+        }
+    }
+        
 }
