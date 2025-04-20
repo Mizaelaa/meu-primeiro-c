@@ -12,6 +12,10 @@ int main (){
     scanf("%d", &chute);
     int acertou = chute == numerosecreto;
 
+    if(chute < 0){
+        printf("Numeros negativos são invalidos\n");
+        i--;
+    }
     if(acertou){
         printf("Parabéns, você acertou!!");
         break;
@@ -25,5 +29,6 @@ int main (){
         }
     }
 }
+printf("Obrigado por jogar");
         
 }
