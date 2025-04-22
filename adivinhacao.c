@@ -15,6 +15,7 @@ int main (){
     if(chute < 0){
         printf("Numeros negativos são invalidos\n");
         i--;
+        continue;
     }
     if(acertou){
         printf("Parabéns, você acertou!!");
